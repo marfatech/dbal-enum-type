@@ -5,20 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of the DbalEnumType package.
  *
- * (c) Wakeapp <https://wakeapp.ru>
+ * (c) MarfaTech <https://marfa-tech.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Wakeapp\Component\DbalEnumType\Type;
+namespace MarfaTech\Component\DbalEnumType\Type;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
 use InvalidArgumentException;
+use MarfaTech\Component\DbalEnumType\Exception\EnumException;
 use ReflectionClass;
 use ReflectionException;
-use Wakeapp\Component\DbalEnumType\Exception\EnumException;
+
 use function array_map;
 use function implode;
 use function in_array;
