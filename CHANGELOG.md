@@ -1,4 +1,6 @@
 ## [Unreleased]
+
+## [2.0.0] - 2021-10-19
 ## Changed
 - Updated `php` with pattern version `~7.4||~8.0`.
 - Updated composer name `wakeapp/dbal-enum-type` to `marfatech/dbal-enum-type`.
