@@ -1,8 +1,8 @@
 DBAL Enum Type
 ==============
 
-[![Latest Stable Version](https://poser.pugx.org/wakeapp/dbal-enum-type/v/stable)](https://packagist.org/packages/wakeapp/dbal-enum-type)
-[![Total Downloads](https://poser.pugx.org/wakeapp/dbal-enum-type/downloads)](https://packagist.org/packages/wakeapp/dbal-enum-type)
+[![Latest Stable Version](https://poser.pugx.org/marfatech/dbal-enum-type/v/stable)](https://packagist.org/packages/marfatech/dbal-enum-type)
+[![Total Downloads](https://poser.pugx.org/marfatech/dbal-enum-type/downloads)](https://packagist.org/packages/marfatech/dbal-enum-type)
 
 Введение
 --------
@@ -21,7 +21,7 @@ DBAL Enum Type
 Откройте консоль и, перейдя в директорию проекта, выполните следующую команду для загрузки наиболее подходящей
 стабильной версии этого компонента:
 ```bash
-    composer require wakeapp/dbal-enum-type
+    composer require marfatech/dbal-enum-type
 ```
 *Эта команда подразумевает что [Composer](https://getcomposer.org) установлен и доступен глобально.*
 
@@ -52,7 +52,7 @@ class LanguageListEnum
 namespace App\AcmeBundle\Doctrine\DBAL\Types;
 
 use App\AcmeBundle\Entity\Enum\LanguageListEnum;
-use Wakeapp\Component\DbalEnumType\Type\AbstractEnumType;
+use MarfaTech\Component\DbalEnumType\Type\AbstractEnumType;
 
 class LanguageListEnumType extends AbstractEnumType
 {
@@ -138,7 +138,7 @@ class AppAcmeBundleBundle extends Bundle
 с тегом `doctrine.event_subscriber`:
 
 ```yaml
-    wakeapp.dbal_enum_type.event_subscriber.enum_event:
+    marfatech.dbal_enum_type.event_subscriber.enum_event:
         tags:
             - { name: doctrine.event_subscriber, connection: default }
 ```
@@ -148,7 +148,7 @@ class AppAcmeBundleBundle extends Bundle
 ```yaml
 doctrine:
     dbal:
-        driver_class:   Wakeapp\Component\DbalEnumType\Driver\PDOMySql\EnumAwareDriver
+        driver_class:   MarfaTech\Component\DbalEnumType\Driver\PDOMySql\EnumAwareDriver
 ```
 
 ### Переопределение значений Enum
