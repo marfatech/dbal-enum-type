@@ -138,7 +138,7 @@ class AppAcmeBundleBundle extends Bundle
 с тегом `doctrine.event_subscriber`:
 
 ```yaml
-    marfatech.dbal_enum_type.event_subscriber.enum_event:
+    marfa_tech.dbal_enum_type.event_subscriber.enum_event:
         tags:
             - { name: doctrine.event_subscriber, connection: default }
 ```
